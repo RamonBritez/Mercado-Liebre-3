@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+/* Variables */
+:root {
+  /* variables de colores */
+  --amarrillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+
+  /* fuentes */
+  --fuente: "roboto", sans-serif;
+
+  /* tamaños tipograficos */
+  --parrafos: 12px;
+  --titulos: 24px;
+  --precios: 18px;
+  --descuentos: 16px;
+  --descripciones: 16px;
+}
+
+/* Estilos generales */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--gris-claro);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+html {
+  font-family: var(--fuente);
+}
+
+li {
+  list-style: none;
+}
+
+/* Estilos de header */
+
+header {
+  background-color: var(--amarrillo);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+header div.logo {
+  width: 130px;
+  margin-left: 25px;
+}
+
+div.busqueda {
+  margin-left: 25px;
+}
+
+p.cuotasYtarjeta {
+  text-align: center;
+  font-size: 12px;
+}
+
+header nav{
+  display: none;
+}
+
+div.burger-menu {
+  background-color: var(--celeste);
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  width: 15px;
+  margin: 25px auto 0;
+}
+
+/* Estilos de main */
+
+div.deslizador {
+    margin-top: 20px;
+}
+
+main{
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section h4{
+  color: var(--gris-oscuro);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+main section article {
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+main section article div.precio-oferta{
+  padding: 15px;
+  border-top: 1px solid #ebebeb;
+}
+
+main section article div.precio-oferta div.envio i{
+  width: 36px;
+  height: 36px;
+  color: var(--verde);
+  border: 1px solid var(--verde);
+  border-radius: 50%;
+}
+
+main section article div.precio-oferta span.precio {
+  font-size: var(--precios);
+}
+
+main section article div.precio-oferta span.oferta {
+  font-size: var(--descuentos);
+  color: var(--verde);
+  margin-left: 7%;
+}
+
+/* Estilos de footer */
+footer{
+    text-align: center;
+    margin: 20px;
+}
+
+footer article p {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+footer div.iconos {
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: var(--celeste);
+    font-size: 30px;
+}
+
+span.copy {
+    font-size: 12px;
+    color: var(--gris-oscuro);
+}
+
+@media (min-width:361px){
+  section article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  
+  main section article h5 {
+    font-size: var(--descripcion);
+    padding-top: 10px;
+  }
+  
+  header nav{
+    display: block;
+  }
+  
+  .burger-menu{
+    display: none;
+  }
+  
+  section article div.precio-oferta {
+    height: 130px;
+  }
+  
+  main section article h5{
+    display: block;
+  }
+  
+
+}
+@media (min-width: 769px){
+
+}
